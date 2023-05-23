@@ -1,48 +1,48 @@
-// //task 1
+//task 1
 
-// let a = 10;
-// let b = 20;
-// let c = 30;
+let a = 10;
+let b = 20;
+let c = 30;
 
-// console.log(a < b < c);
+console.log(a < b < c);
 
-// //task 2
+task 2
 
-// let x = 1;
-// let y = 2;
+let x = 1;
+let y = 2;
 
-// let res1 = String(x) + String(y);
-// console.log(res1);
-// console.log(typeof res1);
+let res1 = String(x) + String(y);
+console.log(res1);
+console.log(typeof res1);
 
-// let res2 = Boolean(x) + y;
-// console.log(res2);
-// console.log(typeof res2);
+let res2 = Boolean(x) + y;
+console.log(res2);
+console.log(typeof res2);
 
-// let res3 = x < y;
-// console.log(res3);
-// console.log(typeof res3);
+let res3 = x < y;
+console.log(res3);
+console.log(typeof res3);
 
-// let res4 = (x / 0) / (y / 0);
-// console.log(res4);
-// console.log(typeof res4);
+let res4 = (x / 0) / (y / 0);
+console.log(res4);
+console.log(typeof res4);
 
-// //task 3
+//task 3
 
-// function age() {
-//     let isAdult = prompt("How old are you?");
-//     if (isAdult >= 18 ) {
-//         alert("Ви досягли повнолітнього віку");
-//     } else {
-//         alert("Ви ще надто молоді");
-//     }   
-// }
+function age() {
+    let isAdult = prompt("How old are you?");
+    if (isAdult >= 18) {
+        alert("Ви досягли повнолітнього віку");
+    } else {
+        alert("Ви ще надто молоді");
+    }
+}
 
-// age()
+age()
 
-// //task 4
+//task 4
 
-// let arr = [4, 5, 2, 1, 6, 5, 3, 5, 2, 5]
+let arr = [4, 5, 2, 1, 6, 5, 3, 5, 2, 5]
 
 
 //task 5
@@ -68,15 +68,26 @@ if (eSide * eSide + dSide * dSide === fSide * fSide ||
 //task 6
 
 function calc(a, b, op) {
- if (op === 1){
-    return a - b; 
- } if (op === 2) {
-    return a + b;
- } if (op === 3){
-    return a / b;
- } else {
-    return a + b;
- }
-    
+    if (op === 1) {
+        return a - b;
+    } if (op === 2) {
+        return a + b;
+    } if (op === 3) {
+        return a / b;
+    } else {
+        return a + b;
+    }
+
 }
 
+//task 7
+
+function findUnique(arr) {
+    let uniqueElemetns = new Set(arr);
+    return arr.length === uniqueElemetns.size;
+}
+
+const arr1 = [2, 3, 4, 6, 7];
+console.log(findUnique(arr1));
+const arr2 = [1, 1, 2, 2, 4, 5];
+console.log(findUnique(arr2)); 
